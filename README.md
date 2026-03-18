@@ -46,9 +46,9 @@ This project is designed as a plug-and-play module for:
 ---
 
 ## 👨‍💻 Author
-**[Your Name/Handle]**  
+**[Saqlain Ali]**  
 *Solo Founder & AI Engineer*  
-[LinkedIn Profile Link] | [Portfolio Link]
+[www.linkedin.com/in/saqlain-ali-cyberai] | [Port]
 
 ---
 *Disclaimer: This repository contains the architecture and documentation for AI Defender Pro. Source code is restricted to private auditors and potential acquirers. Contact the author for a technical demo.*
