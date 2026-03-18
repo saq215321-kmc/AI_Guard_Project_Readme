@@ -1,4 +1,4 @@
-# 🛡️ AI Defender Pro: Enterprise Agentic Governance Layer
+# 🛡️ AI Defender Pro: Enterprise Governance for LLMs
 
 ![Version](https://img.shields.io)
 ![Manifest](https://img.shields.io)
@@ -48,7 +48,7 @@ This project is designed as a plug-and-play module for:
 ## 👨‍💻 Author
 **[Saqlain Ali]**  
 *Solo Founder & AI Engineer*  
-[www.linkedin.com/in/saqlain-ali-cyberai] | [Port]
+[www.linkedin.com/in/saqlain-ali-cyberai] | [https://github.com/saq215321-kmc/AI_Guard_Project_Readme.git]
 
 ---
 *Disclaimer: This repository contains the architecture and documentation for AI Defender Pro. Source code is restricted to private auditors and potential acquirers. Contact the author for a technical demo.*
