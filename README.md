@@ -1,4 +1,4 @@
-# 🛡️ AI Defender Pro: Enterprise Agentic Governance Layer
+# 🛡️ AI Guard: PII Defender & FinOps Dashboard
 
 ![Version](https://img.shields.io)
 ![Manifest](https://img.shields.io)
