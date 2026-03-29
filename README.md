@@ -1,54 +1,79 @@
-# 🛡️ AI Guard: PII Defender & FinOps Dashboard
+# AI Guard: PII Defender & FinOps Dashboard
 
-![Version](https://img.shields.io)
-![Manifest](https://img.shields.io)
-![Security](https://img.shields.io)
+## Overview
+AI Guard is a privacy-focused browser extension that protects sensitive personal information (PII) while monitoring AI spending across major AI chat platforms including ChatGPT, Claude, Gemini, Copilot, and DeepSeek.
 
-**AI Defender Pro** is a high-performance browser-level firewall designed to bridge the gap between unrestricted AI adoption and corporate data sovereignty. Built for the 2026 AI landscape, it provides real-time observability, financial oversight, and automated PII protection across all major LLM platforms (ChatGPT, Claude, Gemini).
+## Key Features
 
----
+### Real-Time PII Protection
+- **Email Protection**: Masks email addresses before submission
+- **Financial Data**: Protects credit card numbers, IBAN, and bank identifiers
+- **Identity Documents**: Masks SSN, CNIC, Aadhaar, and date-of-birth labels
+- **Contact Info**: Protects phone numbers in various formats
 
-## 🚀 The Problem
-As enterprises shift toward **Agentic Workflows**, they face three critical risks:
-1. **Data Leaks:** Employees unknowingly sending PII (Emails, Credit Cards, API Keys) to 3rd-party models.
-2. **Shadow AI Spend:** Zero visibility into decentralized "token burn" across different departments.
-3. **Compliance Gaps:** No audit trail of how AI is being utilized within the organization.
+### FinOps Dashboard
+- **Real-Time Cost Tracking**: Monitor your AI platform spending
+- **Usage Analytics**: Word count and cost breakdown per platform
+- **Leak Detection**: Track blocked PII exposure attempts
+- **PDF Audit Reports**: Generate tamper-detection audit reports with SHA-256 fingerprints
 
-## ✨ Key Features
+## Supported Platforms
+- ChatGPT (chat.openai.com, chatgpt.com)
+- Claude (claude.ai)
+- Google Gemini (gemini.google.com)
+- Microsoft Copilot (copilot.microsoft.com)
+- DeepSeek (chat.deepseek.com, deepseek.com)
+- Perplexity (www.perplexity.ai)
+- Poe (poe.com)
+- Mistral Chat (chat.mistral.ai)
+- Grok on X (x.com/i/grok*)
 
-### 1. Active PII Redaction (The "Defender")
-Our client-side interceptor scans prompts in real-time. If sensitive data is detected, the extension **blocks the transmission** and replaces the data with protected tags (e.g., `[PROTECTED_EMAIL]`) before it ever hits the cloud.
+## How It Works
 
-### 2. Real-Time FinOps Dashboard (The "Watcher")
-- **Token-to-USD Conversion:** Automatically calculates the estimated cost of every conversation based on current model pricing.
-- **Cross-Platform Monitoring:** Tracks usage across ChatGPT, Claude, and Gemini in a single unified view.
+1. **Detection**: Extension monitors prompt inputs on supported AI platforms
+2. **Masking**: Sensitive data is replaced with `[PROTECTED_TYPE]` before submission
+3. **Logging**: Usage metrics and leak blocks are recorded locally
+4. **Reporting**: Generate PDF audit reports with integrity verification
 
-### 3. Enterprise Security Auditing
-- **One-Click CSV Export:** Generates a comprehensive security audit report for compliance officers and CFOs.
-- **Leak Attribution:** Tracks the number of successful redaction events to prove ROI on risk mitigation.
+## Privacy & Data
+- **Local-Only Storage**: All data is stored locally in browser extension storage
+- **No Cloud Upload**: No data is sent to external servers
+- **No Tracking**: No user tracking or analytics
+- **Full Control**: Users can clear all data anytime
 
----
+## Data Stored Locally
 
-## 🛠️ Tech Stack
-- **Architecture:** Chromium Extension Manifest V3 (2026 Standards)
-- **Logic:** Asynchronous JavaScript (Service Workers & Content Scripts)
-- **Storage:** Chrome Local Storage API for decentralized data privacy.
-- **Security:** Regex-based PII Pattern Matching & Event Interception.
+- Total spending calculation
+- Per-platform word counts
+- Blocked leak attempts count
+- Report generation timestamps
+- Integrity hashes for report verification
 
----
+## Permissions Used
 
-## 📈 Acquisition & Integration Value
-This project is designed as a plug-and-play module for:
-- **Cloud Service Providers (CSPs):** To offer "Safe AI" bundles to enterprise clients.
-- **Cybersecurity Firms:** As a specialized "AI-DLP" (Data Loss Prevention) add-on.
-- **Superintelligence Labs:** For monitoring autonomous agent behavior in human-agent collaborative environments.
+- `storage`: Required to maintain local usage statistics and audit data
 
----
+## Report Integrity
+Generated PDF reports include:
+- Generation timestamp (UTC)
+- Per-platform breakdown
+- SHA-256 integrity fingerprint to detect modifications
+- Protected PII type list
 
-## 👨‍💻 Author
-**[Your Name/Handle]**  
-*Solo Founder & AI Engineer*  
-[LinkedIn Profile Link] | [Portfolio Link]
+## Installation
 
----
-*Disclaimer: This repository contains the architecture and documentation for AI Defender Pro. Source code is restricted to private auditors and potential acquirers. Contact the author for a technical demo.*
+1. Download the extension from Chrome Web Store
+2. Click "Add to Chrome"
+3. Visit any supported AI chat platform to start protection
+4. Click the extension icon to view dashboard and generate reports
+
+## Support
+
+For issues or feature requests, contact at: saq215321@gmail.com
+
+## Version History
+## Version 1.0.0
+- Initial release with core PII protection and FinOps dashboard features.
+- PII masking for 8 sensitive data types
+- Real-time cost tracking
+- PDF audit report generation
